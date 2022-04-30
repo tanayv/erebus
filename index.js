@@ -8,7 +8,8 @@ const server = https
     .createServer({
         key: fs.readFileSync("key.pem"),
         cert: fs.readFileSync("cert.pem"),
-        enableTrace: true
+        enableTrace: true,
+        requestCert: true
     }, app)
 
 server.listen(4000, () => {
