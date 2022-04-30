@@ -1,0 +1,93 @@
+Received Record
+Header:
+  Version = TLS 1.0 (0x301)
+  Content Type = Handshake (22)
+  Length = 512
+    ClientHello, Length=508
+      client_version=0x303 (TLS 1.2)
+      Random:
+        gmt_unix_time=0xBCC6F686
+        random_bytes (len=28): 83597B012C5B1D058101F2C3773CC56A4F82CE5CAAF071E77EA8F777
+      session_id (len=32): A3E8500ED0507FCD0CAF244AB4A5F884F46BEDB49C1A440832FE89611A7563BC
+      cipher_suites (len=32)
+        {0x0A, 0x0A} UNKNOWN
+        {0x13, 0x01} TLS_AES_128_GCM_SHA256
+        {0x13, 0x02} TLS_AES_256_GCM_SHA384
+        {0x13, 0x03} TLS_CHACHA20_POLY1305_SHA256
+        {0xC0, 0x2B} TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+        {0xC0, 0x2F} TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+        {0xC0, 0x2C} TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+        {0xC0, 0x30} TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+        {0xCC, 0xA9} TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
+        {0xCC, 0xA8} TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+        {0xC0, 0x13} TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+        {0xC0, 0x14} TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+        {0x00, 0x9C} TLS_RSA_WITH_AES_128_GCM_SHA256
+        {0x00, 0x9D} TLS_RSA_WITH_AES_256_GCM_SHA384
+        {0x00, 0x2F} TLS_RSA_WITH_AES_128_CBC_SHA
+        {0x00, 0x35} TLS_RSA_WITH_AES_256_CBC_SHA
+      compression_methods (len=1)
+        No Compression (0x00)
+      extensions, length = 403
+        extension_type=UNKNOWN(14906), length=0
+        extension_type=server_name(0), length=14
+          0000 - 00 0c 00 00 09 6c 6f 63-61 6c 68 6f 73 74      .....localhost
+        extension_type=extended_master_secret(23), length=0
+        extension_type=renegotiate(65281), length=1
+            <EMPTY>
+        extension_type=supported_groups(10), length=10
+          UNKNOWN (51914)
+          ecdh_x25519 (29)
+          secp256r1 (P-256) (23)
+          secp384r1 (P-384) (24)
+        extension_type=ec_point_formats(11), length=2
+          uncompressed (0)
+        extension_type=session_ticket(35), length=0
+        extension_type=application_layer_protocol_negotiation(16), length=14
+          h2
+          http/1.1
+        extension_type=status_request(5), length=5
+          0000 - 01 00 00 00 00                                 .....
+        extension_type=signature_algorithms(13), length=18
+          ecdsa_secp256r1_sha256 (0x0403)
+          rsa_pss_rsae_sha256 (0x0804)
+          rsa_pkcs1_sha256 (0x0401)
+          ecdsa_secp384r1_sha384 (0x0503)
+          rsa_pss_rsae_sha384 (0x0805)
+          rsa_pkcs1_sha384 (0x0501)
+          rsa_pss_rsae_sha512 (0x0806)
+          rsa_pkcs1_sha512 (0x0601)
+        extension_type=signed_certificate_timestamps(18), length=0
+        extension_type=key_share(51), length=43
+            NamedGroup: UNKNOWN (51914)
+            key_exchange:  (len=1): 00
+            NamedGroup: ecdh_x25519 (29)
+            key_exchange:  (len=32): B9823D2AE8E2796450A842CDCE75BA09A4943C4BDADF9479ED3153584D624502
+        extension_type=psk_key_exchange_modes(45), length=2
+          psk_dhe_ke (1)
+        extension_type=supported_versions(43), length=7
+          UNKNOWN (64250)
+          TLS 1.3 (772)
+          TLS 1.2 (771)
+        extension_type=UNKNOWN(27), length=3
+          0000 - 02 00 02                                       ...
+        extension_type=UNKNOWN(17513), length=5
+          0000 - 00 03 02 68 32                                 ...h2
+        extension_type=UNKNOWN(10794), length=1
+          0000 - 00                                             .
+        extension_type=padding(21), length=206
+          0000 - 00 00 00 00 00 00 00 00-00 00 00 00 00 00 00   ...............
+          000f - 00 00 00 00 00 00 00 00-00 00 00 00 00 00 00   ...............
+          001e - 00 00 00 00 00 00 00 00-00 00 00 00 00 00 00   ...............
+          002d - 00 00 00 00 00 00 00 00-00 00 00 00 00 00 00   ...............
+          003c - 00 00 00 00 00 00 00 00-00 00 00 00 00 00 00   ...............
+          004b - 00 00 00 00 00 00 00 00-00 00 00 00 00 00 00   ...............
+          005a - 00 00 00 00 00 00 00 00-00 00 00 00 00 00 00   ...............
+          0069 - 00 00 00 00 00 00 00 00-00 00 00 00 00 00 00   ...............
+          0078 - 00 00 00 00 00 00 00 00-00 00 00 00 00 00 00   ...............
+          0087 - 00 00 00 00 00 00 00 00-00 00 00 00 00 00 00   ...............
+          0096 - 00 00 00 00 00 00 00 00-00 00 00 00 00 00 00   ...............
+          00a5 - 00 00 00 00 00 00 00 00-00 00 00 00 00 00 00   ...............
+          00b4 - 00 00 00 00 00 00 00 00-00 00 00 00 00 00 00   ...............
+          00c3 - 00 00 00 00 00 00 00 00-00 00 00               ...........
+
